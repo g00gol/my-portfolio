@@ -6,7 +6,7 @@ import FeatureImage from "../assets/images/feature_image.jpg";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between lg:items-center font-quicksand mt-24 w-9/12 lg:w-2/6 h-4/6 mx-auto">
+    <div className="flex flex-col lg:flex-row justify-between lg:items-center font-quicksand my-32 lg:my-60 w-9/12 lg:w-2/6 mx-auto">
       <div className="relative w-5/6 lg:w-5/12">
         <Image src={FeatureImage} layout="responsive" />
       </div>
@@ -16,17 +16,20 @@ export default function Hero() {
         <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-linear1 via-linear2 to-linear3">
           a front end developer, student, and lover of new things
         </p>
-        <a href="" className="flex flex-row items-center text-lg underline">
+        <a
+          href="#projects"
+          className="flex flex-row items-center text-lg underline"
+        >
           my projects
           <AiOutlineArrowRight />
         </a>
 
         <div className="flex !mt-12 space-x-2">
-          <a href="">
-            <FaGithubSquare size={32} color="gray" />
+          <a href="https://github.com/g00gol" target="_blank">
+            <FaGithubSquare size={36} color="gray" />
           </a>
-          <a href="">
-            <FaLinkedin size={32} color="gray" />
+          <a href="https://www.linkedin.com/in/jackeyy/" target="_blank">
+            <FaLinkedin size={36} color="gray" />
           </a>
         </div>
       </div>
