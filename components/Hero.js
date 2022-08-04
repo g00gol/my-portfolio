@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-col items-start w-full mt-4 lg:mt-0 lg:w-6/12 space-y-2">
-        <h1 className="font-bold text-2xl">hey there -- i'm jackey</h1>
+        <h1 className="font-bold text-2xl">hey there -- i&apos;m jackey</h1>
         <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-linear1 via-linear2 to-linear3">
           a front end developer, student, and lover of new things
         </p>
