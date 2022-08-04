@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
 
       <Nav />
       <Hero />
+      <Projects />
     </>
   );
 }
