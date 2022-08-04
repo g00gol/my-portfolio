@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        linear1: "#4324FF",
+        linear2: "#0047FE",
+        linear3: "#00D1FF",
+      },
       fontFamily: {
         quicksand: ["Quicksand"],
       },
