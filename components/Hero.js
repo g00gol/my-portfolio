@@ -25,10 +25,10 @@ export default function Hero() {
         </a>
 
         <div className="flex !mt-12 space-x-2">
-          <a href="https://github.com/g00gol" target="_blank">
+          <a href="https://github.com/g00gol">
             <FaGithubSquare size={36} color="gray" />
           </a>
-          <a href="https://www.linkedin.com/in/jackeyy/" target="_blank">
+          <a href="https://www.linkedin.com/in/jackeyy/">
             <FaLinkedin size={36} color="gray" />
           </a>
         </div>
