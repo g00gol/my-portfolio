@@ -16,6 +16,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Projects />
+      <div className="h-screen w-11/12"></div>
     </>
   );
 }
