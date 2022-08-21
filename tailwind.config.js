@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         quicksand: ["Quicksand"],
+        playfair: ["Playfair"],
       },
     },
   },
