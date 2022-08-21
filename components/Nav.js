@@ -33,12 +33,13 @@ export default function Nav() {
             <AiOutlineClose size={24} />
           </button>
         </div>
-        <div className="flex flex-col items-center space-y-8 text-lg">
+        <div className="flex flex-col items-center space-y-8 text-lg font-quicksand">
           <a href="#">projects</a>
           <a href="#">blog</a>
           <a href="#">contact</a>
         </div>
       </div>
+
       <div
         id="nav"
         className={
