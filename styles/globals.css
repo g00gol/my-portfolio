@@ -6,3 +6,8 @@
   font-family: "Quicksand";
   src: url("../assets/fonts/Quicksand/Quicksand-Regular.ttf");
 }
+
+#nav {
+  backdrop-filter: blur(1px);
+  border-color: rgba(209, 213, 219, 0.5)
+}
