@@ -14,7 +14,7 @@ export default function Projects() {
       </div>
 
       {/* Project gallery */}
-      <div className="space-y-12 lg:grid grid-cols-4 gap-8 w-full">
+      <div className="space-y-20 lg:grid grid-cols-4 gap-x-8 gap-y-12 w-full">
         <ProjectContainer
           image={CPAC}
           title={"Castle Point Anime Convention"}
@@ -38,7 +38,7 @@ export default function Projects() {
           image={PHB}
           title={"Play! Hoboken - Billiards"}
           time={"april 2022 - may 2022"}
-          tags={["frontend", "wordpress", "web design", "crm"]}
+          tags={["frontend", "wordpress", "web design"]}
         />
 
         <ProjectContainer />
