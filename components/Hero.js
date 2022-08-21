@@ -6,7 +6,7 @@ import FeatureImage from "../assets/images/feature_image.jpg";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between lg:items-center font-quicksand my-32 lg:my-60 w-9/12 lg:w-2/6 mx-auto">
+    <div className="flex flex-col lg:flex-row justify-between lg:items-center font-quicksand my-32 lg:my-40 w-9/12 lg:w-2/6 mx-auto">
       <div className="relative w-5/6 lg:w-5/12">
         <Image src={FeatureImage} layout="responsive" />
       </div>
