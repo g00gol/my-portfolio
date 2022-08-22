@@ -43,7 +43,7 @@ export default function Nav() {
       <div
         id="nav"
         className={
-          "transition-all ease-in-out mx-auto w-9/12 lg:w-2/6 my-6 py-2" +
+          "mx-auto w-9/12 lg:w-2/6 my-6 py-2" +
           " " +
           (scrollPos > 0
             ? "lg:bg-gray-300 lg:bg-opacity-50 lg:box-content lg:rounded-full lg:px-2"
