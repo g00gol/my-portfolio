@@ -9,13 +9,15 @@ app.prepare().then(() => {
 	const server = express()
 	server.get("/post/:id", (req, res) => {
 		const actualPage = "/post"
-		const queryParams = { id: (req.params.id ? req.params.id : "") }
+		const queryParams = { id: req.params.id }
 		app.render(req, res, actualPage, queryParams)
 	})
 
 	server.get("*", (req, res) => {
 		return handle(req, res)
 	})
+
+	// run on port 3030
 	server.listen(3030, (err) => {
 		if (err) throw err
 		console.log("server listening on port 3030")
