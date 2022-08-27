@@ -2,7 +2,7 @@ const Post = (props) => {
 	console.log(props)
 	return (
 		<div>
-			<h1>{props ? props.myParams.id : ""}</h1>
+			<h1>{props.params && props.params.id}</h1>
 		</div>
 	)
 }
