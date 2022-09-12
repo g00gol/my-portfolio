@@ -1,12 +1,46 @@
 import Head from "next/head";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 
-import Post from "./post";
+import Blog from "./Blog";
 
-export default function Home() {
+export async function getStaticProps() {
+  const client = new ApolloClient({
+    uri: process.env.GQL_URI,
+    cache: new InMemoryCache(),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query MyQuery {
+        postsConnection {
+          edges {
+            node {
+              author {
+                name
+                id
+              }
+              createdAt
+              slug
+              title
+              excerpt
+              content
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: { posts: data.postsConnection.edges },
+  };
+}
+
+export default function Home({ posts }) {
   return (
     <>
       <Head>
@@ -16,12 +50,9 @@ export default function Home() {
       </Head>
 
       <Nav />
-
-      <Post />
-
       <Hero />
       <Projects />
-      <div className="h-screen w-11/12"></div>
+      <Blog posts={posts} />
     </>
   );
 }
