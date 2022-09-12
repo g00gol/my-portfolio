@@ -6,7 +6,7 @@ import PHB from "../assets/images/project_images/phbmockup.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-11/12 pt-12 mx-auto">
+    <div id="projects" className="w-11/12 py-12 mx-auto">
       {/* Project heading */}
       <div className="my-24">
         <h1 className="text-3xl py-2">projects</h1>
