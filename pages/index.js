@@ -26,7 +26,6 @@ export async function getStaticProps() {
               createdAt
               slug
               title
-              excerpt
               content
             }
           }
@@ -36,7 +35,7 @@ export async function getStaticProps() {
   });
 
   return {
-    props: { posts: data.postsConnection.edges },
+    props: { posts: data.postsConnection.edges || [] },
   };
 }
 

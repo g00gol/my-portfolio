@@ -1,3 +1,5 @@
+import { AiOutlineArrowRight } from "react-icons/ai";
+
 import PostCard from "../components/PostCard";
 
 export default function Blog({ posts }) {
@@ -10,6 +12,19 @@ export default function Blog({ posts }) {
   }
 
   return (
-    <div className="relative flex flex-col h-screen w-11/12">{postCards}</div>
+    <div className="relative flex h-screen w-11/12 mx-auto justify-center">
+      <div className="space-y-20 w-3/6">
+        <h1 className="text-3xl font-playfair font-bold">latest posts</h1>
+        <div className="space-y-12">{postCards}</div>
+        <div>
+          <a
+            href="#"
+            className="text-xl font-quicksand underline flex items-center"
+          >
+            all posts <AiOutlineArrowRight />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
