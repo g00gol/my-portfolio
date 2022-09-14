@@ -12,8 +12,8 @@ export default function Blog({ posts }) {
   }
 
   return (
-    <div className="relative flex h-screen w-11/12 mx-auto justify-center">
-      <div className="space-y-20 w-3/6">
+    <div className="relative flex h-full w-9/12 lg:w-11/12 mx-auto lg:justify-center">
+      <div className="space-y-20 w-full">
         <h1 className="text-3xl font-playfair font-bold">latest posts</h1>
         <div className="space-y-12">{postCards}</div>
         <div>
