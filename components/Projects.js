@@ -9,7 +9,7 @@ export default function Projects() {
     <div id="projects" className="w-11/12 py-12 mx-auto">
       {/* Project heading */}
       <div className="my-24">
-        <h1 className="text-3xl py-2">projects</h1>
+        <h1 className="text-3xl py-2 font-bold font-playfair">projects</h1>
         <div className="w-full h-px bg-black"></div>
       </div>
 
