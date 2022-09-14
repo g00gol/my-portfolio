@@ -4,6 +4,7 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 import Blog from "./Blog";
 
@@ -52,6 +53,7 @@ export default function Home({ posts }) {
       <Hero />
       <Projects />
       <Blog posts={posts} />
+      <Contact />
     </>
   );
 }
