@@ -46,7 +46,7 @@ export default function Nav() {
           "mx-auto w-9/12 lg:w-2/6 my-6 py-2" +
           " " +
           (scrollPos > 0
-            ? "lg:bg-gray-300 lg:bg-opacity-50 lg:box-content lg:rounded-full lg:px-2"
+            ? "lg:bg-gray-300 lg:bg-opacity-50 lg:box-content lg:rounded-full lg:px-2 transition-all duration-300"
             : "")
         }
       >
