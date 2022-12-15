@@ -3,10 +3,9 @@ import Head from "next/head";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
-import Post from "./post";
-
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <>
       <Head>
@@ -16,12 +15,9 @@ export default function Home() {
       </Head>
 
       <Nav />
-
-      <Post />
-
       <Hero />
       <Projects />
-      <div className="h-screen w-11/12"></div>
+      <Footer />
     </>
   );
 }

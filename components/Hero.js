@@ -1,42 +1,30 @@
-import Image from "next/image";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-
-import FeatureImage from "../assets/images/feature_image.jpg";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between lg:items-center font-quicksand my-32 lg:my-40 w-9/12 lg:w-2/6 mx-auto">
-      <div className="relative w-5/6 lg:w-5/12">
-        <Image src={FeatureImage} layout="responsive" />
-      </div>
-
-      <div className="flex flex-col items-start w-full mt-4 lg:mt-0 lg:w-6/12 space-y-2">
-        <h1 className="font-bold text-2xl">hey there -- i&apos;m jackey</h1>
-        <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-linear1 via-linear2 to-linear3">
-          a front end developer, student, and lover of new things
-        </p>
-        <a
-          href="#projects"
-          className="flex flex-row items-center text-lg underline"
-        >
-          my projects
-          <AiOutlineArrowRight />
-        </a>
-
-        <div className="flex !mt-12 space-x-2">
-          <a href="https://github.com/g00gol">
-            <FaGithubSquare size={36} color="gray" />
-          </a>
-          <a href="https://www.linkedin.com/in/jackeyy/">
-            <FaLinkedin size={36} color="gray" />
-          </a>
+    <div className="flex flex-col font-quicksand my-32 text-xl lg:text-4xl lg:my-40 w-9/12 lg:w-3/6 mx-auto">
+      <h1 className="font-bold">
+        👋 <del>hi</del> beep boop
+      </h1>
+      <h2 className="lg:flex lg:text-4xl">
+        i'm studying to&nbsp;
+        <div className="font-playfair font-bold text-accent">
+          <Typewriter
+            options={{
+              strings: [
+                "become a software developer",
+                "challenge myself",
+                "make a difference",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
-      </div>
-
-      <div className="hidden lg:block w-4/12 absolute left-0 -translate-y-24">
-        <p className="ml-4 text-gray-300">001</p>
-        <div className="h-px bg-gray-300"></div>
+      </h2>
+      <div className="my-12 space-x-6 lg:space-x-20 text-lg underline">
+        <a href="https://www.linkedin.com/in/jackeyy/">linkedin</a>
+        <a href="https://github.com/g00gol">github</a>
       </div>
     </div>
   );

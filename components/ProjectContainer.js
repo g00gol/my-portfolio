@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectContainer(props) {
   return (
-    <div className="w-full h-full">
+    <div className="w-full font-quicksand space-y-4 text-lg">
       {props.image ? (
         <div className="relative w-full bg-gray-300">
           <Image src={props.image} layout="responsive" />
@@ -10,11 +10,22 @@ export default function ProjectContainer(props) {
       ) : (
         <></>
       )}
-      <p className="font-playfair font-bold text-xl">{props.title}</p>
-      <p className="font-quicksand text-gray-500 text-lg">{props.time}</p>
-      <p className="font-quicksand text-lg">
-        {props.tags && props.tags.join(", ")}
-      </p>
+      <div>
+        <p className="font-playfair font-bold text-xl">{props.title}</p>
+        <p>{props.tags && props.tags.join(", ")}</p>
+      </div>
+
+      <div className="flex space-x-4 text-accent underline">
+        {!props.links ? (
+          <></>
+        ) : (
+          props.links.map((arr, i) => (
+            <a key={i} href={arr[1]}>
+              {arr[0]}
+            </a>
+          ))
+        )}
+      </div>
     </div>
   );
 }

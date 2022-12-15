@@ -1,50 +1,40 @@
 import ProjectContainer from "./ProjectContainer";
 
 import CPAC from "../assets/images/project_images/cpacmockup.png";
-import LindoGourmet from "../assets/images/project_images/lindomockup.png";
-import PHB from "../assets/images/project_images/phbmockup.png";
+import Shima from "../assets/images/project_images/lindomockup.png";
+import Kiki from "../assets/images/project_images/phbmockup.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-11/12 pt-12 mx-auto">
-      {/* Project heading */}
-      <div className="my-24">
-        <h1 className="text-3xl py-2">projects</h1>
-        <div className="w-full h-px bg-black"></div>
-      </div>
-
+    <div id="projects" className="w-full flex justify-center">
       {/* Project gallery */}
-      <div className="space-y-20 lg:grid grid-cols-4 gap-x-8 gap-y-12 w-full">
+      <div className="space-y-20 lg:grid grid-cols-2 gap-x-32 gap-y-12 w-9/12 lg:w-10/12 xl:w-6/12 lg:space-y-0">
         <ProjectContainer
           image={CPAC}
           title={"Castle Point Anime Convention"}
-          time={"feb 2022 - present"}
-          tags={["frontend", "web design"]}
+          tags={["website", "fullstack", "ui/ux"]}
+          links={[["website", "https://cpac.moe/"]]}
         />
-
-        <ProjectContainer />
-        <ProjectContainer />
 
         <ProjectContainer
-          image={LindoGourmet}
-          title={"LindoGourmet"}
-          time={"jun 2022 - present"}
-          tags={["fullstack", "ecommerce", "web design"]}
+          image={Shima}
+          title={"Shima @HackNJIT"}
+          tags={["app", "fullstack", "ui/ux"]}
+          links={[
+            ["devpost", "https://devpost.com/software/shima"],
+            ["github", "https://github.com/KevinHa48/Shima"],
+          ]}
         />
-
-        <ProjectContainer />
 
         <ProjectContainer
-          image={PHB}
-          title={"Play! Hoboken - Billiards"}
-          time={"april 2022 - may 2022"}
-          tags={["frontend", "wordpress", "web design"]}
+          image={Kiki}
+          title={"Kiki's Cleaning Service"}
+          tags={["game", "frontend"]}
+          links={[
+            ["itch.io", "https://iscii.itch.io/kikis-cleaning-service"],
+            ["github", "https://github.com/iscii/kiki"],
+          ]}
         />
-
-        <ProjectContainer />
-        <ProjectContainer />
-        <ProjectContainer />
-        <ProjectContainer />
       </div>
     </div>
   );
