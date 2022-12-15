@@ -1,44 +1,9 @@
 import Head from "next/head";
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-
-import Blog from "./Blog";
-
-export async function getStaticProps() {
-  const client = new ApolloClient({
-    uri: process.env.GQL_URI,
-    cache: new InMemoryCache(),
-  });
-
-  const { data } = await client.query({
-    query: gql`
-      query MyQuery {
-        postsConnection {
-          edges {
-            node {
-              author {
-                name
-                id
-              }
-              createdAt
-              slug
-              title
-              content
-            }
-          }
-        }
-      }
-    `,
-  });
-
-  return {
-    props: { posts: data.postsConnection.edges || [] },
-  };
-}
+import Footer from "../components/Footer";
 
 export default function Home({ posts }) {
   return (
@@ -52,8 +17,7 @@ export default function Home({ posts }) {
       <Nav />
       <Hero />
       <Projects />
-      <Blog posts={posts} />
-      <Contact />
+      <Footer />
     </>
   );
 }

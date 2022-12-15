@@ -20,12 +20,12 @@ export default function Nav() {
   }
 
   return (
-    <div className="fixed w-full top-0 z-50 bg-white lg:bg-transparent">
+    <div className="fixed w-full top-0 z-50 bg-main lg:bg-transparent">
       <div
         className={
           (toggle ? "fixed z-50" : "hidden") +
           " " +
-          "left-0 top-0 bg-gray-100 flex flex-col w-screen h-screen items-center lg:hidden"
+          "left-0 top-0 bg-main flex flex-col w-screen h-screen items-center lg:hidden"
         }
       >
         <div className="flex w-9/12 justify-end py-8">
@@ -34,24 +34,25 @@ export default function Nav() {
           </button>
         </div>
         <div className="flex flex-col items-center space-y-8 text-lg font-quicksand">
+          <a href="#">about</a>
           <a href="#">projects</a>
-          <a href="#">blog</a>
-          <a href="#">contact</a>
         </div>
       </div>
 
       <div
         id="nav"
         className={
-          "mx-auto w-9/12 lg:w-2/6 my-6 py-2" +
+          "mx-auto w-9/12 lg:w-3/6 my-6 py-2" +
           " " +
           (scrollPos > 0
-            ? "lg:bg-gray-300 lg:bg-opacity-50 lg:box-content lg:rounded-full lg:px-2 transition-all duration-300"
+            ? "lg:bg-gray-300 lg:bg-opacity-50 lg:box-content lg:rounded-full lg:px-4 transition-all duration-300"
             : "")
         }
       >
         <div className="font-quicksand flex justify-between text-base lg:text-lg">
-          <a href="#">jackey yang</a>
+          <a href="#" className="font-playfair font-bold text-2xl">
+            jackey yang
+          </a>
           <button
             onClick={() => handleToggle(true)}
             className="block lg:hidden"
@@ -59,9 +60,8 @@ export default function Nav() {
             <AiOutlineMenu size={24} />
           </button>
           <div className="hidden lg:block space-x-6">
+            <a href="#">about</a>
             <a href="#">projects</a>
-            <a href="#">blog</a>
-            <a href="#">contact</a>
           </div>
         </div>
       </div>
