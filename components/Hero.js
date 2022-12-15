@@ -7,7 +7,7 @@ export default function Hero() {
         👋 <del>hi</del> beep boop
       </h1>
       <h2 className="lg:flex lg:text-4xl">
-        i'm studying to&nbsp;
+        i&apos;m studying to&nbsp;
         <div className="font-playfair font-bold text-accent">
           <Typewriter
             options={{
