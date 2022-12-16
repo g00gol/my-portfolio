@@ -12,9 +12,9 @@ export default function Hero() {
           <Typewriter
             options={{
               strings: [
-                "become a software developer",
-                "challenge myself",
-                "make a difference",
+                "build cool software!",
+                "challenge myself.",
+                "make a difference.",
               ],
               autoStart: true,
               loop: true,

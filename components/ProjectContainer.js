@@ -4,7 +4,7 @@ export default function ProjectContainer(props) {
   return (
     <div className="w-full font-quicksand space-y-4 text-lg">
       {props.image ? (
-        <div className="relative w-full bg-gray-300">
+        <div className="overflow-hidden border rounded-xl relative w-full bg-gray-300">
           <Image src={props.image} layout="responsive" />
         </div>
       ) : (
