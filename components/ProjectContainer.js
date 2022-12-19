@@ -12,7 +12,7 @@ export default function ProjectContainer(props) {
       )}
       <div>
         <p className="font-playfair font-bold text-xl">{props.title}</p>
-        <p>{props.tags && props.tags.join(", ")}</p>
+        <p className="text-textGray">{props.tags && props.tags.join(", ")}</p>
       </div>
 
       <div className="flex space-x-4 text-accent underline">

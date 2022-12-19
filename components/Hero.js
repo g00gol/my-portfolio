@@ -6,7 +6,7 @@ export default function Hero() {
       <h1 className="font-bold">
         👋 <del>hi</del> beep boop
       </h1>
-      <h2 className="lg:flex lg:text-4xl">
+      <h2 className="text-textGray lg:flex lg:text-4xl">
         i&apos;m studying to&nbsp;
         <div className="font-playfair font-bold text-accent">
           <Typewriter
@@ -25,6 +25,13 @@ export default function Hero() {
       <div className="my-12 space-x-6 lg:space-x-20 text-lg underline">
         <a href="https://www.linkedin.com/in/jackeyy/">linkedin</a>
         <a href="https://github.com/g00gol">github</a>
+        <a
+          href="https://drive.google.com/file/d/1X5VQVLJN180s1xHgA7x1gC4svK5wqYci/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume
+        </a>
       </div>
     </div>
   );
