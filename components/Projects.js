@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div id="projects" className="w-full flex justify-center">
       {/* Project gallery */}
-      <div className="space-y-20 lg:grid grid-cols-2 gap-x-12 gap-y-12 w-9/12 lg:w-11/12 xl:w-11/12 lg:space-y-0">
+      <div className="space-y-20 lg:grid grid-cols-2 gap-x-12 gap-y-12 w-9/12 lg:w-9/12 xl:w-6/12 lg:space-y-0">
         <ProjectContainer
           image={CPAC}
           title={"Castle Point Anime Convention"}
