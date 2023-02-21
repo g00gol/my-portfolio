@@ -51,7 +51,7 @@ export default function Nav() {
       >
         <div className="font-quicksand flex justify-between text-base lg:text-lg">
           <a href="#" className="font-playfair font-bold text-2xl">
-            jackey tang
+            jackey yang
           </a>
           <button
             onClick={() => handleToggle(true)}

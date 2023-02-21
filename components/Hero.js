@@ -3,9 +3,7 @@ import Typewriter from "typewriter-effect";
 export default function Hero() {
   return (
     <div className="flex flex-col font-quicksand my-32 text-xl lg:text-4xl lg:my-40 w-9/12 lg:w-3/6 mx-auto">
-      <h1 className="font-bold">
-        👋 <del>hi</del> beep boop
-      </h1>
+      <h1 className="font-bold">👋 hello world</h1>
       <h2 className="text-textGray lg:flex lg:text-4xl">
         i&apos;m studying to&nbsp;
         <div className="font-playfair font-bold text-accent">
@@ -26,7 +24,7 @@ export default function Hero() {
         <a href="https://www.linkedin.com/in/jackeyy/">linkedin</a>
         <a href="https://github.com/g00gol">github</a>
         <a
-          href="https://drive.google.com/file/d/1X5VQVLJN180s1xHgA7x1gC4svK5wqYci/view?usp=sharing"
+          href="../static/jackey-yang-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
